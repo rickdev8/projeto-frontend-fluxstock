@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🖥️ FluxStock — Web Interface (Frontend)
 
-## Getting Started
+Aplicação front-end do **FluxStock**, um sistema de controle e gestão de estoque focado em produtividade. A interface foi projetada do zero para ser rápida, minimalista e totalmente adaptável a diferentes tamanhos de tela.
 
-First, run the development server:
+> ⚠️ **Nota:** Este repositório representa a camada de visualização (*Client-side*). A aplicação consome a REST API do FluxStock. **[Acesse o repositório do Back-end aqui](COLOCAR_O_LINK_DO_REPO_DO_BACKEND_AQUI)**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [ https://api.gleidsonsite.com.br/](https://api.gleidsonsite.com.br/) with your browser to see the result.
+## ✨ Destaques da Interface & UX
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Otimização de Buscas (*Debounce*):** Implementação de atraso programado nos inputs de pesquisa. A listagem só consulta a API após o usuário terminar de digitar, economizando largura de banda e poupando o servidor.
+* **Componentes Modulares:** Estrutura baseada em componentes isolados e reutilizáveis, garantindo consistência visual em todo o sistema.
+* **100% Responsivo:** Layout fluido testado para operação em Desktops (telas de estoque), Tablets e Smartphones (conferência rápida no galpão).
+* **Tratamento de Estados:** Experiência visual amigável para carregamentos (*Skeletons/Loadings*), listas vazias (*Empty States*) e feedbacks de erro.
+* **Rotas Protegidas:** Controle de navegação baseado em sessão de usuário via Token JWT.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tecnologias
 
-To learn more about Next.js, take a look at the following resources:
+* **[Next.js](https://nextjs.org/)** — Framework React 
+* **TypeScript** — Tipagem estática e interfaces estritas
+* **CSS Modules** — Estilização com escopo isolado (zero conflitos de cascata)
+* **Lucide Icons** *(Ou troque pelo pacote de ícones que você usou, ex: Phosphor / React Icons)*
+* **Vercel** — CI/CD e Hospedagem
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏛️ Estrutura de Arquivos
 
-## Deploy on Vercel
+A organização do projeto segue boas práticas de separação de responsabilidades:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+src/
+├── components/       # Componentes visuais genéricos (Buttons, Inputs, Modals)
+├── hooks/            # Custom Hooks (ex: useDebounce, useAuth)
+├── services/         # Configuração do cliente HTTP e chamadas da API
+├── styles/           # Tokens globais de CSS, resets e variáveis de cores
+├── types/            # Definições de tipagem estática (Interfaces do sistema)
+└── pages/            # Rotas da aplicação (ou /app se usou App Router)

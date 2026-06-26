@@ -1,0 +1,24 @@
+.cards {
+  font-weight: 400 !important;
+  font-family: "Inter", sans-serif;
+  flex-direction: row;
+  display: flex !important;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cardActive {
+  background: #7c3aed;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1;
+}
+

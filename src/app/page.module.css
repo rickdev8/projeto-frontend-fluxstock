@@ -1,0 +1,8 @@
+/* page.module.css */
+.page {
+  height: calc(100vh - 5.8rem) !important;
+  overflow-x: hidden;  
+  overflow-y: auto;     
+  display: flex;
+  flex-direction: column;
+}

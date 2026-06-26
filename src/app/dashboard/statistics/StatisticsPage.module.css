@@ -1,0 +1,205 @@
+.container {
+  padding: 2rem;
+  background-color: #f9f9fc;
+  min-height: 100vh;
+}
+
+/* Titles */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f1f1f;
+  margin-bottom: 1.5rem;
+}
+
+.sla {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 1rem;
+  width: 68.5%;
+  overflow-x: auto;
+}
+
+.dates {
+  align-items: flex-end;
+  width: 400px;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: #7c3aed;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: white;
+  color: #7c3aed;
+  border: 2px solid #7c3aed !important;
+}
+
+.inputdDate {
+  margin: 0 10px;
+  width: 135px;
+}
+
+.filterBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid #e5e5e5;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card,
+.card2 {
+  flex: 1 1 300px; /* Responsivo pra notebook */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  background-color: white;
+  color: #333;
+}
+
+.card2 {
+  background-color: #7c3aed;
+  color: #f3f0ff;
+}
+
+.card h2,
+.card2 h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+
+.card p,
+.card2 p,
+.card span {
+  font-size: 14px;
+  color: #555;
+}
+
+.card2 p {
+  color: #f3f0ff;
+}
+
+
+/* Primeiros 3 gráficos: duas colunas responsivas */
+/* Primeiros 3 gráficos: duas colunas responsivas */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Parte do estoque + baixo estoque: também em 2 colunas */
+.chartsEstoq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Cada gráfico/caixa dentro da grid */
+.chartContainer,
+.chartContainerEstoq {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+/* Gráfico de linhas: isolado e largo */
+.chartContainerLine {
+  grid-column: 1 / -1; /* ocupa toda a largura da grid */
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+
+
+
+.reposicao {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.reposicaoTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.reposicaoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reposicaoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+
+.reposicaoItem:last-child {
+  border-bottom: none;
+}
+
+.nomeProduto {
+  font-weight: 500;
+  color: #333;
+}
+
+.quantidade {
+  font-weight: 600;
+  color: #313031;
+}
+
+.semReposicao {
+  font-size: 14px;
+  color: #1b998b;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 12px;
+}
+

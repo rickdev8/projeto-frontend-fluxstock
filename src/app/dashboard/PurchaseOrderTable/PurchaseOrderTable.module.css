@@ -1,0 +1,187 @@
+.container {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  min-height: 100vh;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.searchFilter {
+  display: flex;
+  gap: 1rem;
+}
+.searchBox {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: white;
+}
+.searchBox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 100%;
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+.createBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #7c3aed;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.createBtn:hover {
+  opacity: 0.9;
+}
+.dateFilters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.dateBtn {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.dateBtn.active {
+  background-color: #8b5cf6;
+  color: white;
+}
+.dateBtn:hover {
+  background: #8b5cf6;
+  color: white;
+}
+.tableWrapper {
+  max-height: 590px;
+  position: relative;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+.table th,
+.table td {
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 14px;
+}
+.table th {
+  background-color: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: 600;
+  color: #6b7280;
+}
+.table tr {
+  border-bottom: 1px solid rgba(216, 214, 214, 0.288);
+}
+.actionsCol {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+.pagination button {
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #111827;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+}
+.pagination button:hover:not(:disabled) {
+  background-color: #f3e8ff;
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.paginationInfo {
+  display: inline-block;
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  min-width: 90px;
+  text-align: center;
+}
+
+.escondFloat {
+  z-index: 1000;
+  background: white;
+  color: #1f2937;
+  padding: 16px;
+  border-radius: 8px;
+  width: 600px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+
+.escondFloat h3 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 1px;
+}
+
+.produtosTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.produtosTable th,
+.produtosTable td {
+  text-align: left;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.produtosTable th {
+  border-bottom: 1px solid #4b5563;
+  font-weight: 600;
+}
+
+.produtosTable tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.produtosTable tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

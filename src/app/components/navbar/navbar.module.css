@@ -1,0 +1,172 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 12rem;
+  background-color: #ffffff;
+  border: 1px solid #363f4d1a;
+  flex-wrap: wrap;
+  transition: padding 0.3s ease;
+}
+
+.logoNavContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.loginButton,
+.registerButton {
+  font-size: 14px; /* menor */
+  padding: 0.6rem 1rem; /* menor altura e largura */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.loginButton {
+  background-color: transparent;
+  color: #363F4D;
+  border: 1px solid #363F4D;
+}
+
+.loginButton:hover {
+  background-color: #363F4D;
+  color: #fff;
+}
+
+.registerButton {
+  background-color: #7c3aed;
+  color: #fff;
+}
+
+.registerButton:hover {
+  background-color: #6929d1;
+}
+
+.divNavLinkandButton {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.divNavLinkandButton:hover,
+.navLink:hover {
+  color: #7c3aed;
+}
+
+.divNavLinkandButton svg {
+  margin-left: 5px;
+}
+
+/* ========= RESPONSIVIDADE ========= */
+
+/* Telas grandes */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0.8rem 6rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.8rem 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .logoNavContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navLinks {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .loginButton,
+  .registerButton {
+    width: auto;
+    font-size: 13px;
+    padding: 0.55rem 0.9rem;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 2rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .loginButton,
+  .registerButton {
+    width: 100%;
+    max-width: 220px;
+    font-size: 13px;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .logoNavContainer img {
+    width: 110px;
+  }
+
+  .navLinks {
+    gap: 0.8rem;
+  }
+
+  .loginButton,
+  .registerButton {
+    font-size: 12.5px;
+    padding: 0.45rem 0.8rem;
+  }
+}

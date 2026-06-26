@@ -1,0 +1,54 @@
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* ou defina um valor fixo, se necessário */
+}
+
+.loader {
+  display: flex;
+  flex-direction: row; /* garante alinhamento horizontal */
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60px;
+}
+
+.ball {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.ball:nth-child(1) {
+  animation: bounce-1 2.1s ease-in-out infinite;
+}
+
+@keyframes bounce-1 {
+  50% {
+    transform: translateY(-18px);
+    background-color: rgb(156, 6, 243);
+  }
+}
+
+.ball:nth-child(2) {
+  animation: bounce-2 2.1s ease-in-out 0.3s infinite;
+}
+
+@keyframes bounce-2 {
+  50% {
+    transform: translateY(-18px);
+    background-color: rgb(138, 8, 245);
+  }
+}
+
+.ball:nth-child(3) {
+  animation: bounce-3 2.1s ease-in-out 0.6s infinite;
+}
+
+@keyframes bounce-3 {
+  50% {
+    transform: translateY(-18px);
+    background-color: rgb(148, 18, 255);
+  }
+}

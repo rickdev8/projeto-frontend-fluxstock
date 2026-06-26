@@ -1,0 +1,168 @@
+.container {
+  width: 850px;
+  min-height: 340px; /* troquei height por min-height */
+  padding: 0.8rem 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.4rem;
+}
+
+.bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.blocof {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.totalf,
+.metodf {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 160px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.valor {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.tabeladiv {
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  flex-grow: 1; /* ajuda o container a crescer junto */
+}
+
+.tabeladiv::-webkit-scrollbar {
+  width: 6px;
+}
+
+.tabeladiv::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 600px;
+}
+
+.tabela thead {
+  position: sticky;
+  top: 0;
+  background-color: #f8f6ff;
+  z-index: 1;
+  box-shadow: 0 1px 3px rgba(124, 58, 237, 0.05);
+}
+
+.tabela th,
+.tabela td {
+  padding: 6px 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.tabela th {
+  font-weight: 600;
+  color: #555;
+}
+
+.tabela td {
+  color: #333;
+}
+
+.tabela tbody tr:hover {
+  background-color: #f4f0ff;
+  transition: background-color 0.2s ease;
+}
+
+/* === Botões === */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.8rem;
+  border-top: 1px solid #eee;
+  gap: 0.8rem;
+}
+
+.voltar,
+.finalizar {
+  padding: 0.45rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.voltar {
+  background: none;
+  color: #7c3aed;
+  border: 1.8px solid #7c3aed;
+}
+
+.voltar:hover {
+  background-color: #f3e8ff;
+}
+
+.finalizar {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.finalizar:hover {
+  background-color: #6b21a8;
+}
+
+/* === Responsividade === */
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .blocof {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .botoes {
+    flex-direction: column-reverse;
+  }
+
+  .voltar,
+  .finalizar {
+    width: 100%;
+  }
+}

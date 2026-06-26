@@ -1,0 +1,172 @@
+.container {
+  height: 570px;
+  width: 650px;
+  background: #ffffff;
+  padding: 40px 32px;
+  border-radius: 12px;
+  max-width: 960px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.customField,
+.bulkUpload {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.customField:hover,
+.bulkUpload:hover {
+  background: #f9fafb;
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111827;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #9ca3af;
+}
+
+.field select {
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")
+    no-repeat right 10px center;
+  background-size: 16px;
+}
+
+.field textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.dialog {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 100px auto;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.dialog::backdrop {
+  background: rgba(7, 7, 7, 0.59);
+}
+
+.uploadBox {
+  width: 85%;
+  height: 180px;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.uploadBox svg {
+  margin-top: 0%;
+  position: absolute;
+}
+
+.fieldFull {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  background: #7c3aed;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background: #6d28d9;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

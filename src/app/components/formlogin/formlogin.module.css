@@ -1,0 +1,146 @@
+.containerlogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;       
+  height: 100%;
+  padding: 40px;
+  background-color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  background: #fff;
+  margin-top: -100px;
+}
+
+.title {
+  font-size: 24px;
+  color: rgb(83, 85, 92);
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  margin-bottom: 5px;
+}
+
+.message {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signin a {
+  color: #7c3aed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signin a:hover {
+  text-decoration: underline #7c3aed;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.form label {
+  position: relative;
+  flex: 1;
+}
+
+.input {
+  width: 100%;
+  height: 55px;
+  outline: none;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form label span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+.input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.input:focus + span,
+.input:valid + span {
+  top: 5px;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #7c3aed;
+}
+
+.input:valid + span {
+  color: #242525;
+}
+
+.submit, .back {
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit {
+  margin-top: 10px;
+  background-color: #7c3aed;
+  color: #fff;
+}
+
+.submit:hover {
+  background-color: #7c3aed;
+}
+
+.back {
+  background-color: white;
+  color: #7c3aed;
+}
+
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

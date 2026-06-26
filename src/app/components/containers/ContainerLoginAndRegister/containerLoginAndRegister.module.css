@@ -1,0 +1,11 @@
+.divcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+  height: calc(100vh - 5.8rem) !important;
+  flex-direction: column;
+  padding: 0px 0px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap; 
+}

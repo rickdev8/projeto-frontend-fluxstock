@@ -1,0 +1,38 @@
+.pai{
+    padding: 0 !important;
+    width: 80%;
+    align-items: center;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+.traco {
+    margin: 5px; 
+    background-color: #dbc7fa;
+    width: 25px;
+    height: 2px;
+}
+
+.bool {
+    display: flex;
+    align-items: center;
+}
+
+.bolinha {
+    border: 2px solid #b07bff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.bolinha.bolinhaAtive {
+    background-color: #7326EB;
+    border: 2px solid #7326EB;
+}
+
+.traco.tracoAtive {
+    padding: 4px solid #7326EB;
+     border: 2px solid #b07bff;
+    background-color: #7326EB;
+}

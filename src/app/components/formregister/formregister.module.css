@@ -1,0 +1,162 @@
+.containerRegister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  min-width: 300px;
+  height: 100%;
+  padding: 40px;
+  background-color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  background: #fff;
+  margin-top: -100px;
+}
+
+.title {
+  font-size: 24px;
+  color: rgb(83, 85, 92);
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+
+.message {
+  color: rgba(88, 87, 87, 0.82);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.signin {
+  color: rgba(88, 87, 87, 0.82);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signin a {
+  color: #7c3aed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signin a:hover {
+  text-decoration: underline #7c3aed;
+}
+
+.inputGroup {
+  position: relative;
+  width: 100%;
+}
+
+
+.form label {
+  position: relative;
+  flex: 1;
+}
+
+.input,
+.inputdata {
+  width: 100%;
+  height: 55px;
+  outline: none;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 0 12px;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+  line-height: 1;
+  padding-top: 10px;
+}
+
+.input::placeholder,
+.inputdata::placeholder {
+  color: transparent;
+}
+
+.form label span {
+  position: absolute;
+  left: 12px;
+  top: 19px; /* centralizado verticalmente */
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  user-select: none;
+}
+
+.input:focus + span,
+.inputdata:focus + span,
+.input:valid + span,
+.inputdata:valid + span {
+  top: -15px;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.input:valid + span,
+.inputdata:valid + span {
+  color: #242525;
+}
+
+.input:focus,
+.inputdata:focus {
+  border-color: #7c3aed;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(255, 114, 94, 0.2);
+}
+
+.submit,
+.back {
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit {
+  margin-top: 10px;
+  background-color: #7c3aed;
+  color: #fff;
+}
+
+.submit:hover {
+  background-color: #7c3aed;
+}
+
+.back {
+  background-color: white;
+  color: #7c3aed;
+}
+
+.back:hover {
+  background-color: #f8f8f8;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

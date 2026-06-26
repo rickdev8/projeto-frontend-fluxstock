@@ -1,0 +1,81 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: #2d2d2d;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.printBtn {
+  background: #7c3aed;
+  color: #fff;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+
+.printBtn:hover {
+  background: #2c0b66;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+  padding: 0.3rem;
+  text-align: center;
+  border: none;
+}
+
+.table tr + tr td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.barcode {
+  margin-top: 0.2rem;
+  height: 20px;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 1rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+@media print {
+  .printBtn {
+    display: none;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.75rem;
+    padding: 0.3rem;
+  }
+
+  .barcode {
+    height: 30px;
+  }
+}

@@ -1,0 +1,10 @@
+.page {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    height: 100% !important;
+    flex-direction: row;
+    width: 100%;
+}

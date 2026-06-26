@@ -1,0 +1,159 @@
+/* print.module.css */
+
+.container {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.printBtn {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+
+.printBtn:hover {
+  background-color: #9333ea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.th {
+  font-size: 12px;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  background-color: #703feb;
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 2px solid #d1c4e9;
+}
+
+.input {
+  width: 100px !important;
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.tdAction {
+  justify-content: center;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.input:focus {
+  border-color: #7c3aed; /* roxo bonito */
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+}
+
+.button {
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #6d28d9;
+}
+
+.button:active {
+  background-color: #5b21b6;
+}
+
+.td2 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.td {
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.td:last-child {
+  text-align: center;
+}
+
+.barcode {
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+  height: 50px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.input2 {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  border-color: #7c3aed; 
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.25);
+}
+
+@media (max-width: 600px) {
+  .search {
+    max-width: 100%;
+  }
+}
+
+

@@ -1,0 +1,99 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: #2d2d2d;
+}
+
+.title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.printBtn {
+  background: #4f46e5;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+
+.printBtn:hover {
+  background: #3730a3;
+}
+
+.vendaCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  page-break-inside: avoid; 
+}
+
+.cliente {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.produtos {
+  margin-top: 0.5rem;
+}
+
+.produtos h3 {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.produtoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 0.8rem;
+}
+
+.produtoItem:last-child {
+  border-bottom: none;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 1rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+
+@media print {
+  .printBtn {
+    display: none;
+  }
+
+  .body {
+    background: #fff;
+  }
+
+  .vendaCard {
+    border: 1px solid #ddd;
+    margin-bottom: 0.6rem;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .cliente {
+    font-size: 0.9rem;
+  }
+}

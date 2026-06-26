@@ -1,0 +1,253 @@
+.dialog {
+  margin: 6% auto;
+  border: none;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 95%;
+  height: 470px;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  font-weight: 600;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  display: flex;
+  padding-top: 0.8rem;
+}
+
+.bol {
+  gap: 20px;
+  width: 750px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.bol h1 {
+  width: 180px !important;
+  font-size: 1rem;
+}
+
+.buttons {
+  font-family: "Inter", sans-serif;
+  padding: 0 8px;
+  justify-content: space-between;
+  margin-top: 18rem;
+  display: flex;
+}
+
+.buttonVoltar {
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  width: 130px;
+  border: 1px solid rgba(138, 138, 138, 0.65);
+}
+
+.buttonProximo {
+  background: #7c3aed;
+  color: #fff;
+  padding: 0.6rem;
+  border: none;
+  width: 130px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.container {
+  height: 100%;
+  background: #fff;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem !important;
+}
+
+.field input,
+.field select {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.field input {
+  width: 220px;
+}
+
+.resultList {
+  font-family: "Inter", sans-serif;
+  width: 500px;
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.resultItem {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 0.8rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productImage {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  flex-shrink: 0;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.productName {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  min-width: 70px;
+}
+
+.productDetail {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.voltar,
+.proximo,
+.proximoInative,
+.proximo2 {
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.voltar {
+  background-color: transparent;
+  border: 1px solid #7c3aed;
+  color: #7c3aed;
+}
+
+.containerv {
+  width: 360px;
+  height: 450px;
+}
+
+.voltar:hover {
+  background-color: #7c3aed18;
+}
+
+.proximo {
+  position: absolute;
+  margin-left: 720px;
+  background-color: #7c3aed;
+  color: #fff;
+  border: none;
+}
+
+.proximo2 {
+  background-color: transparent;
+  border: 1px solid #7c3aed;
+  color: #7c3aed;
+}
+
+.proximoInative {
+  position: absolute;
+  margin-left: 720px;
+  background-color: #7c3aed7c;
+  color: #ffffff98;
+  border: none;
+}
+
+.proximo:hover {
+  background-color: #5b21b6;
+}
+
+/* Checkbox estilizado */
+.label {
+  width: 180px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 5px 8px;
+  border: 2px solid #7c3aed;
+  border-radius: 5px;
+  background-color: white;
+  color: #7c3aed;
+  transition: all 0.2s;
+  justify-content: space-around;
+}
+
+.label.checked {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.box {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #7c3aed;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  transition: all 0.2s;
+}
+
+.label.checked .box {
+  background-color: white;
+  color: #7c3aed;
+}
+
+.input {
+  display: none;
+}
